@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSpace - Home</title>
+    <style>
+
+/* Basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8fafc !important;
+    color: #0f172a;
+    line-height: 1.6;
+}
+
+/* Navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: white;
+}
+
+.logo {
+    color: #2563eb;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #475569;
+}
+
+.navbar a:hover {
+    color: #2563eb;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: #eff6ff;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+}
+
+/* Feature cards */
+.features {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.features h2 {
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    background: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #0000000d;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #2563eb;
+}
+
+.card p {
+    color: #64748b;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0f172a;
+    color: white;
+}
+
+/* Mobile responsive design */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h4 class="logo">WebSpace.</h4>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Build Something Amazing</h1>
+        <p>
+            Simple ideas. Beautiful designs.
+            Better experiences.
+        </p>
+        <a href="#features" class="btn">Get Started</a>
+    </section>
+
+    <section class="features" id="features">
+        <h2>Our Features</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Clean Design</h3>
+                <p>Create beautiful and simple user interfaces.</p>
+            </div>
+
+            <div class="card">
+                <h3>Responsive</h3>
+                <p>Works smoothly on mobile and desktop devices.</p>
+            </div>
+
+            <div class="card">
+                <h3>Fast Loading</h3>
+                <p>Lightweight code for a faster website.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>© 2026 WebSpace. All rights reserved.</p>
+    </footer>
+
+    <!-- Practice Questions -->
+    <h2>Hello Javascript</h2>
+
+
+    <!-- Practice Questions 2-->
+    <div class="box">first div</div>
+    <div class="box">second div</div>
+    <div class="box">third div</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
